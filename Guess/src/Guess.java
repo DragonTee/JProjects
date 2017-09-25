@@ -13,7 +13,7 @@ public class Guess extends JFrame{
 
 	static int num = 0;
 	
-	public Guess() {
+	public void GUI() {
 		setBounds(new Rectangle(0, 0, 600, 200));
 		setTitle("Guess Number Game");
 		getContentPane().setLayout(new GridLayout(0, 3, 0, 0));
@@ -54,6 +54,10 @@ public class Guess extends JFrame{
 					Result.setText("Загаданное число меньше");
 			}
 	    });
+	}
+	
+	public Guess() {
+		GUI();
 	}
 
 	public static void main(String[] args) {
